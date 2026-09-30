@@ -8,7 +8,7 @@
 [INSTRUMENTATION: BILATERAL TOTAL RETURN SWAPS (TRS) / OVER-THE-COUNTER DERIVATIVES]
 ```
 
----
+https://archegos-eosin.vercel.app/
 
 ## 1. Executive Description
 
@@ -96,28 +96,6 @@ Loss figures are documented strictly in accordance with official bank regulatory
 3. **Credit Suisse Group AG**: Ad-hoc Trading Update pursuant to Article 53 LR (March 29, 2021) & Final Paul Weiss Special Committee Report (July 2021).
 4. **Board of Governors of the Federal Reserve System & Bank of England (PRA)**: Joint Cease and Desist Order and $387.5 Million civil money penalty against Credit Suisse (July 24, 2023).
 
----
-
-## 6. Local Deployment & Execution
-
-The dossier is entirely self-contained. To run locally without web servers or compilers:
-
-```bash
-# Clone or navigate to the directory
-cd "path/to/archegos-dossier"
-
-# Option A: Direct browser launch
-start index.html       # Windows
-open index.html        # macOS
-xdg-open index.html    # Linux
-
-# Option B: Minimal static local server (preserves strict CORS headers for fonts)
-npx serve .
-# or
-python -m http.server 8080
-```
-
----
 
 ## 7. Archival Colophon
 
