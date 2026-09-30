@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCHÉGOS: THE INVISIBLE POSITION — A Financial Investigation</title>
+  
+  <meta name="description" content="An institutional financial investigation into Archegos Capital Management, Bill Hwang, total return swaps, prime brokerage leverage, and the March 2021 Wall Street collapse.">
+  <meta name="author" content="Financial Investigation Archive">
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif), Inter (Clean Sans), JetBrains Mono (Data/Terminal) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow: hidden;">
+
+  <!-- ========================================================================
+       OPENING PROLOGUE EXPERIENCE
+       Pure Black Screen, Statement-by-Statement Restrained Focus
+       ======================================================================== -->
+  <div id="opening-screen" role="dialog" aria-modal="true" aria-label="Introductory Prologue">
+    <div class="opening-text-container">
+      <div id="opening-statement-target" class="opening-statement" aria-live="polite"></div>
+
+      <div id="opening-title-wrap" class="opening-title-wrap">
+        <h1 class="opening-title">ARCHÉGOS</h1>
+        <div class="opening-subtitle">THE INVISIBLE POSITION</div>
+        <div class="opening-tag">A FINANCIAL RESEARCH DOSSIER &bull; MARCH 2021</div>
+        <button id="enter-dossier-btn" class="enter-dossier-btn">ENTER DOSSIER</button>
+      </div>
+    </div>
+    <button id="skip-intro-btn" class="skip-intro-btn" aria-label="Skip Prologue">SKIP PROLOGUE</button>
+  </div>
+
+  <!-- Subtle Custom Cursor (Desktop) -->
+  <div id="custom-cursor-dot" class="custom-cursor-dot"></div>
+  <div id="custom-cursor-ring" class="custom-cursor-ring"></div>
+
+  <!-- ========================================================================
+       TOP INSTITUTIONAL RESEARCH HEADER (Minimal, Clean)
+       ======================================================================== -->
+  <header id="site-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <a href="#hero-section" class="brand-title">ARCHÉGOS</a>
+      </div>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero-section" class="nav-link active">CASE</a></li>
+          <li><a href="#the-structure" class="nav-link">STRUCTURE</a></li>
+          <li><a href="#the-leverage" class="nav-link">LEVERAGE</a></li>
+          <li><a href="#the-banks" class="nav-link">BANKS</a></li>
+          <li><a href="#the-collapse" class="nav-link">COLLAPSE</a></li>
+          <li><a href="#document-room" class="nav-link">DOCUMENTS</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#source-archive" class="terminal-mode-btn" style="text-decoration: none;" title="Verified Sources & Dossier Archive">
+          <span class="terminal-status-dot"></span>
+          <span>RESEARCH</span>
+        </a>
+      </div>
+    </div>
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+  </header>
+
+  <main id="dossier-root">
+
+    <!-- ========================================================================
+         01 — THE CASE: HERO SECTION & EXECUTIVE OVERVIEW
+         ======================================================================== -->
+    <section id="hero-section" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="dossier-meta-strip">
+          <div class="meta-item">
+            <span class="meta-label">LEGAL ENTITY</span>
+            <span class="meta-val">Archegos Capital Management LP</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">STRUCTURE</span>
+            <span class="meta-val">Private Family Office</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">PEAK ASSETS</span>
+            <span class="meta-val highlight tnum">&gt;$36 Billion</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">COLLAPSE DATE</span>
+            <span class="meta-val alert">March 26, 2021</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">FATE</span>
+            <span class="meta-val alert">Defaulted on margin calls</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">FOUNDER STATUS</span>
+            <span class="meta-val alert">Sentenced to 18 Years (Nov 2024)</span>
+          </div>
+        </div>
+
+        <div class="hero-grid">
+          <div>
+            <div class="hero-kicker">FINANCIAL INVESTIGATION DOSSIER &bull; CASE REF 2021-ACM</div>
+            <h1 class="hero-main-title">ARCHÉGOS</h1>
+            <h2 class="hero-sub-title">The Invisible Position</h2>
+            <p class="hero-narrative">
+              Archegos Capital Management was a limited partnership family office that managed the personal assets of Bill Hwang, at one time controlling over $36 billion in capital. On March 26, 2021, Archegos defaulted on margin calls from several global investment banks, triggering a multi-billion-dollar fire sale of equities across Wall Street and causing over $10 billion in catastrophic bank losses.
+            </p>
+
+            <div class="hero-stat-strip">
+              <div class="hero-stat-card">
+                <span class="hero-stat-number tnum">&gt;$10B+</span>
+                <span class="hero-stat-label">Total Global Bank Losses</span>
+              </div>
+              <div class="hero-stat-card">
+                <span class="hero-stat-number tnum">$20B</span>
+                <span class="hero-stat-label">Lost in 2 Days (Bloomberg)</span>
+              </div>
+              <div class="hero-stat-card">
+                <span class="hero-stat-number tnum">$5.5B</span>
+                <span class="hero-stat-label">Credit Suisse Loss Alone</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual-card">
+            <div class="hero-logo-frame">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Archegos_Capital_Management_logo.png" 
+                   alt="Archegos Capital Management LP Official Wordmark" 
+                   class="hero-logo-img" />
+            </div>
+            <div class="visual-provenance-badge">
+              <span class="verification-status-dot"></span>
+              <span>VERIFIED ORIGINAL ENTITY LOGO &bull; WIKIMEDIA COMMONS</span>
+            </div>
+
+            <div class="hero-dossier-brief">
+              <div class="brief-row">
+                <span class="brief-key">Headquarters</span>
+                <span class="brief-value">New York City, New York</span>
+              </div>
+              <div class="brief-row">
+                <span class="brief-key">Founded</span>
+                <span class="brief-value">2013</span>
+              </div>
+              <div class="brief-row">
+                <span class="brief-key">Industry</span>
+                <span class="brief-value">Investment management</span>
+              </div>
+              <div class="brief-row">
+                <span class="brief-key">Primary Instrument</span>
+                <span class="brief-value">Bilateral Total Return Swaps (TRS)</span>
+              </div>
+              <div class="brief-row">
+                <span class="brief-key">Historical Precedent</span>
+                <span class="brief-value">Long Term Capital Management (LTCM, 1998)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Authority Sources:</span>
+            <span class="source-title">The Wall Street Journal, Bloomberg News, Reuters, The Telegraph</span>
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Archegos_Capital_Management" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Inspect Wikipedia Authority Baseline</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Editorial Breather: 01 THE MAN -->
+    <div class="editorial-breather">
+      <span class="breather-num">01 / THE MAN</span>
+      <h2 class="breather-title">A TIGER CUB REBUILDING IN THE SHADOWS.</h2>
+      <p class="breather-sub">SUNG KOOK HWANG &bull; TIGER ASIA &bull; 2012 INSIDER TRADING PLEA &bull; 2013 FORMATION</p>
+    </div>
+
+    <!-- ========================================================================
+         02 — THE MAN: BILL HWANG
+         ======================================================================== -->
+    <section id="the-man" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 02 &bull; EXECUTIVE PROFILE</span>
+          <h2 class="section-heading">The Man Behind the Vehicle</h2>
+          <p class="section-lead-statement">
+            Sung Kook "Bill" Hwang, a former protégé of hedge-fund pioneer Julian Robertson at Tiger Management, built Archegos from the ashes of Tiger Asia Management into one of the most leveraged private portfolios in Wall Street history.
+          </p>
+        </div>
+
+        <div class="man-grid">
+          
+          <div class="subject-dossier-panel">
+            <div class="subject-header">
+              <span class="subject-tag">SUBJECT DOSSIER &bull; DEFENDANT</span>
+              <span class="subject-id">SDNY CR-22-240</span>
+            </div>
+
+            <div class="subject-visual-wrap">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Thurgood_Marshall_United_States_Court_House.jpg" 
+                   alt="Thurgood Marshall United States Court House Foley Square Manhattan" 
+                   class="subject-image" 
+                   loading="lazy" />
+              <div class="subject-visual-caption">
+                Thurgood Marshall U.S. Courthouse (SDNY), 40 Centre St, Foley Square, Manhattan — Venue of Hwang's 2024 trial and 18-year federal sentencing.
+              </div>
+            </div>
+            <div class="visual-provenance-badge" style="padding: 0 1.25rem;">
+              <span class="verification-status-dot"></span>
+              <span>AUTHENTIC PROCEEDINGS VENUE &bull; WIKIMEDIA COMMONS</span>
+            </div>
+
+            <div class="subject-facts-table">
+              <div class="fact-row">
+                <span class="fact-label">Full Legal Name</span>
+                <span class="fact-val">Sung Kook Hwang</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Birth Year / Origin</span>
+                <span class="fact-val">1964 &bull; South Korea / USA</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Former Venture</span>
+                <span class="fact-val">Tiger Asia Management</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">2012 Criminal Record</span>
+                <span class="fact-val alert">Guilty plea: Insider Trading ($44M fine)</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">2014 Regulatory Ban</span>
+                <span class="fact-val alert">4-Year Hong Kong Trading Prohibition</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">November 2024 Outcome</span>
+                <span class="fact-val alert">Sentenced to 18 Years in Prison</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="man-narrative-block">
+            <div style="margin-bottom: 2rem; border-bottom: 1px solid var(--border-dim); padding-bottom: 1.5rem;">
+              <h1 style="font-family: var(--font-editorial); font-size: clamp(3rem, 5.5vw, 4.5rem); font-weight: 400; line-height: 1; letter-spacing: 0.05em; color: #ffffff; margin-bottom: 0.5rem;">BILL HWANG</h1>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.2em; color: var(--text-accent); text-transform: uppercase;">FOUNDER &bull; ARCHÉGOS CAPITAL MANAGEMENT</div>
+            </div>
+
+            <h3>From Tiger Cub to Covert Leverage</h3>
+            <p>
+              Formerly of Julian Robertson's renowned "Tiger Cub" lineage at Tiger Asia Management, Hwang established the Archegos family office in 2013 with an initial core of personal capital, managing approximately $10 billion by 2020. The firm took its title from the Greek word &alpha;&rho;&chi;&eta;&gamma;&#972;&sigmaf; (archegos), signifying "leader" or "pioneer."
+            </p>
+
+            <div class="pedigree-box">
+              <div class="pedigree-title">Regulatory Disqualification & The Family Office Pivot</div>
+              <p class="pedigree-text">
+                Tiger Asia Management had previously pleaded guilty in 2012 to federal insider trading charges involving Chinese bank stocks, settling with the SEC and DOJ for $44 million in fines. In 2014, Hong Kong regulatory authorities banned Hwang from trading in Hong Kong securities for four years. Unable to manage external client funds under standard investment advisory regulations, Hwang transitioned his wealth into a private family office.
+              </p>
+            </div>
+
+            <p>
+              By converting to a private family office, Archegos was exempt under the Dodd-Frank Act from registering with the SEC as an investment adviser and exempt from publicly disclosing its portfolio holdings quarterly on SEC Form 13F. This regulatory boundary permitted Hwang to secretly assemble enormous synthetic equity positions across multiple global investment banks.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Source Attribution:</span>
+            <span class="source-title">Reuters (November 21, 2024), finews.asia (March 29, 2021), The Telegraph (March 29, 2021)</span>
+          </div>
+          <a href="https://www.reuters.com/legal/archegos-bill-hwang-be-sentenced-massive-us-fraud-2024-11-20/" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>View Reuters Sentencing Coverage</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         03 — THE VEHICLE: THE FAMILY OFFICE
+         ======================================================================== -->
+    <section id="the-vehicle" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 03 &bull; CORPORATE STRUCTURE</span>
+          <h2 class="section-heading">The Vehicle: A Blind Spot by Design</h2>
+          <p class="section-lead-statement">
+            Unlike traditional hedge funds that manage external institutional capital, Archegos operated as a private single-family office, legally shielded from mandatory public transparency.
+          </p>
+        </div>
+
+        <div class="vehicle-grid">
+          
+          <div class="mechanism-card">
+            <h3>The Family Office Exemption</h3>
+            <p>
+              Under Rule 202(a)(11)(G)-1 of the Investment Advisers Act of 1940, family offices managing exclusively the wealth of "family clients" are excluded from the definition of an investment adviser. Consequently, Archegos was never required to:
+            </p>
+
+            <div class="loophole-badge-list">
+              <div class="loophole-item">
+                <span class="loophole-code">EXEMPTION 01</span>
+                <span class="loophole-desc">File Form ADV detailing assets under management, risk controls, and executive disciplinary history.</span>
+              </div>
+              <div class="loophole-item">
+                <span class="loophole-code">EXEMPTION 02</span>
+                <span class="loophole-desc">Submit quarterly SEC Form 13F filings disclosing beneficial equity holdings over $100 million.</span>
+              </div>
+              <div class="loophole-item">
+                <span class="loophole-code">EXEMPTION 03</span>
+                <span class="loophole-desc">Submit to routine examination or regulatory stress-testing by the Securities and Exchange Commission.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mechanism-card highlighted">
+            <h3>Scale and Capital Velocity</h3>
+            <p>
+              Managing $10 billion in equity as of late 2020, Archegos experienced explosive growth as Hwang channeled synthetic derivative profits back into concentrated equity bets. At its apex in early 2021, the family office controlled over $36 billion in net capital.
+            </p>
+            <p>
+              However, this $36 billion base was merely the collateral wedge. Deployed at 5x to 8x leverage through bilateral swap facilities across Wall Street, Archegos commanded effective economic exposure exceeding $100 billion in publicly traded companies.
+            </p>
+            <div class="dossier-meta-strip" style="margin-top: 1rem; margin-bottom: 0;">
+              <div class="meta-item">
+                <span class="meta-label">2020 ASSETS</span>
+                <span class="meta-val tnum">$10 Billion</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">PEAK 2021 ASSETS</span>
+                <span class="meta-val highlight tnum">&gt;$36 Billion</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">GROSS EXPOSURE</span>
+                <span class="meta-val alert tnum">&gt;$100 Billion</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Source Attribution:</span>
+            <span class="source-title">The Wall Street Journal (April 1, 2021), Bloomberg News (April 8, 2021), Reuters (December 3, 2022)</span>
+          </div>
+          <a href="https://www.wsj.com/articles/archegos-blowup-puts-spotlight-on-gaps-in-swap-regulation-11617280278" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Examine SEC Swap Regulations Gaps</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Editorial Breather: 04 THE STRUCTURE -->
+    <div class="editorial-breather">
+      <span class="breather-num">04 / THE STRUCTURE</span>
+      <h2 class="breather-title">THE POSITION WAS INVISIBLE.</h2>
+      <p class="breather-sub">TOTAL RETURN SWAPS / PRIME BROKERAGE / CONCENTRATED EXPOSURE</p>
+    </div>
+
+    <!-- ========================================================================
+         04 — THE STRUCTURE: TOTAL RETURN SWAPS
+         No Arrows Rule: Nodes, Lines, Pulse Connectors
+         ======================================================================== -->
+    <section id="the-structure" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 04 &bull; FINANCIAL ARCHITECTURE</span>
+          <h2 class="section-heading">Total Return Swaps: The Synthetic Veil</h2>
+          <p class="section-lead-statement">
+            Archegos's holdings were primarily structured as bilateral Total Return Swaps (TRS). This derivative mechanism enabled the firm to capture the complete economic upside and downside of common stocks while the lending banks held the legal title to the shares.
+          </p>
+        </div>
+
+        <div class="trs-diagram-container">
+          
+          <div class="trs-interactive-controls" role="tablist" aria-label="TRS Mechanics Step Navigator">
+            <button class="step-btn trs-step-btn active" role="tab">Step 1: Swap Agreement</button>
+            <button class="step-btn trs-step-btn" role="tab">Step 2: Bank Direct Hedging</button>
+            <button class="step-btn trs-step-btn" role="tab">Step 3: Multi-Lender Duplication</button>
+            <button class="step-btn trs-step-btn" role="tab">Step 4: Margin Cascade</button>
+          </div>
+
+          <div class="trs-network-board">
+            
+            <div id="trs-node-archegos" class="trs-node">
+              <div class="node-header">
+                <span class="node-badge">FAMILY OFFICE</span>
+                <span class="node-badge" style="color: var(--text-muted);">BUY-SIDE</span>
+              </div>
+              <h3 class="node-title">Archegos Capital</h3>
+              <p class="node-desc">
+                Posts initial margin collateral (10%–15%). Receives total capital appreciation and dividend yields on underlying shares.
+              </p>
+              <div class="node-data-line">
+                <span>Public Disclosures: </span><strong style="color: var(--crisis-red);">NONE REQUIRED (13F EXEMPT)</strong>
+              </div>
+            </div>
+
+            <div class="trs-connector-panel">
+              <div id="trs-pipe-swap" class="connection-pipe">
+                <div class="pipe-title">
+                  <span>BILATERAL TOTAL RETURN SWAP</span>
+                  <span class="pipe-state-pill">SYNTHETIC DERIVATIVE</span>
+                </div>
+                <p class="pipe-desc">
+                  Transfers economic returns and losses between Archegos and prime broker. No shares change hands.
+                </p>
+              </div>
+
+              <div id="trs-pipe-hedge" class="connection-pipe">
+                <div class="pipe-title">
+                  <span>EQUITY HEDGING TRANSACTIONS</span>
+                  <span class="pipe-state-pill">PHYSICAL PURCHASE</span>
+                </div>
+                <p class="pipe-desc">
+                  Prime broker buys common shares on open exchange in its own corporate name to offset swap liability.
+                </p>
+              </div>
+            </div>
+
+            <div id="trs-node-bank" class="trs-node">
+              <div class="node-header">
+                <span class="node-badge">PRIME BROKER</span>
+                <span class="node-badge" style="color: var(--text-muted);">SELL-SIDE</span>
+              </div>
+              <h3 class="node-title">Global Investment Banks</h3>
+              <p class="node-desc">
+                Credit Suisse, Nomura, Morgan Stanley, Goldman Sachs, UBS. Holds physical shares on balance sheet.
+              </p>
+              <div class="node-data-line">
+                <span>Registered Legal Owner: </span><strong style="color: var(--terminal-green);">PRIME BROKER BANK</strong>
+              </div>
+            </div>
+
+          </div>
+
+          <p id="trs-step-explainer" class="trs-explainer-text">
+            Archegos executes a bilateral Total Return Swap (TRS) with a prime broker bank. Archegos posts a modest margin and receives economic returns without direct share ownership.
+          </p>
+
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Source Citation:</span>
+            <span class="source-title">The Wall Street Journal (April 1, 2021), Financial Times (March 29, 2021)</span>
+          </div>
+          <a href="https://www.ft.com/content/b7e0f57b-3751-42b8-8a17-eb7749f4dbc8" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Read Financial Times Investigation</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         05 — CONCENTRATED POSITIONS
+         ======================================================================== -->
+    <section id="the-positions" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 05 &bull; PORTFOLIO CONCENTRATION</span>
+          <h2 class="section-heading">The Target Equities</h2>
+          <p class="section-lead-statement">
+            Archegos concentrated immense purchasing power into a select cluster of media and Chinese technology equities. Through swap leverage, the firm amassed effective ownership of substantial portions of these companies' freely traded shares.
+          </p>
+        </div>
+
+        <div class="positions-grid">
+          
+          <div class="position-card">
+            <div class="position-logo-box">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/ViacomCBS.svg/1280px-ViacomCBS.svg.png" 
+                   alt="ViacomCBS Logo" 
+                   class="position-logo-img" 
+                   loading="lazy" />
+            </div>
+            <div class="position-ticker">NASDAQ: VIAC</div>
+            <h3 class="position-name">ViacomCBS Inc.</h3>
+            <p class="position-desc">
+              The focal point of the collapse. Archegos held synthetic exposure estimated at tens of billions. When ViacomCBS issued $3B in shares, the subsequent price decline catalyzed the global margin call cascade.
+            </p>
+            <div class="position-metrics">
+              <div class="metric-row">
+                <span class="metric-label">March 26 Plunge</span>
+                <span class="metric-val drop tnum">-27.0% (Single Day)</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-label">Weekly Loss</span>
+                <span class="metric-val drop tnum">&gt;50% Drawdown</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="position-card">
+            <div class="position-logo-box">
+              <span style="font-family: var(--font-editorial); font-size: 1.5rem; font-weight: 700; color: #000;">Discovery, Inc.</span>
+            </div>
+            <div class="position-ticker">NASDAQ: DISCA</div>
+            <h3 class="position-name">Discovery, Inc.</h3>
+            <p class="position-desc">
+              Heavily accumulated via swap derivative contracts across Credit Suisse and Morgan Stanley. Shares experienced massive liquidation volume alongside ViacomCBS.
+            </p>
+            <div class="position-metrics">
+              <div class="metric-row">
+                <span class="metric-label">March 26 Plunge</span>
+                <span class="metric-val drop tnum">-27.4% (Single Day)</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-label">Block Trade Impact</span>
+                <span class="metric-val drop tnum">Historic Volume</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="position-card">
+            <div class="position-logo-box">
+              <span style="font-family: var(--font-sans); font-size: 1.4rem; font-weight: 800; color: #2932e1;">Baidu 百度</span>
+            </div>
+            <div class="position-ticker">NASDAQ: BIDU</div>
+            <h3 class="position-name">Baidu, Inc.</h3>
+            <p class="position-desc">
+              Leading Chinese technology and search conglomerate. Added to the list of affected liquidation names on March 30 as MUFG and Morgan Stanley unwound blocks.
+            </p>
+            <div class="position-metrics">
+              <div class="metric-row">
+                <span class="metric-label">Liquidation Date</span>
+                <span class="metric-val tnum">March 26–30, 2021</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-label">Lender Exposure</span>
+                <span class="metric-val tnum">MUFG / MS / GS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="position-card">
+            <div class="position-logo-box">
+              <span style="font-family: var(--font-sans); font-size: 1.4rem; font-weight: 700; color: #e50055;">唯品会 VIP.com</span>
+            </div>
+            <div class="position-ticker">NYSE: VIPS</div>
+            <h3 class="position-name">Vipshop Holdings</h3>
+            <p class="position-desc">
+              Chinese discount e-commerce platform. Repeatedly targeted with massive synthetic leverage by Archegos, resulting in severe double-digit volatility during liquidation.
+            </p>
+            <div class="position-metrics">
+              <div class="metric-row">
+                <span class="metric-label">Drawdown</span>
+                <span class="metric-val drop tnum">&gt;35% Weekly Drop</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-label">Derivative Type</span>
+                <span class="metric-val tnum">Total Return Swap</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="position-card">
+            <div class="position-logo-box">
+              <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Farfetch_logo_2020.svg/1280px-Farfetch_logo_2020.svg.png" 
+                   alt="Farfetch Logo" 
+                   class="position-logo-img" 
+                   loading="lazy" />
+            </div>
+            <div class="position-ticker">NYSE: FTCH</div>
+            <h3 class="position-name">Farfetch Limited</h3>
+            <p class="position-desc">
+              Luxury fashion digital platform. Cited in federal indictments as one of the key concentrated swap bets deployed by Hwang and Halligan.
+            </p>
+            <div class="position-metrics">
+              <div class="metric-row">
+                <span class="metric-label">Exposure Role</span>
+                <span class="metric-val tnum">Synthetic Swap Target</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-label">Federal Indictment</span>
+                <span class="metric-val alert tnum">Named in Allegations</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Source Attribution:</span>
+            <span class="source-title">The Wall Street Journal (March 28 & 30, 2021), Bloomberg News (April 2021), U.S. Federal Indictment (2022)</span>
+          </div>
+          <a href="https://www.wsj.com/articles/ex-tiger-asia-founder-triggers-30-billion-in-large-stocks-sales-11616973350" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Read WSJ Initial Liquidation Report</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Editorial Breather: 06 THE LEVERAGE -->
+    <div class="editorial-breather">
+      <span class="breather-num">06 / THE LEVERAGE</span>
+      <h2 class="breather-title">THE NUMBERS WERE LARGER THAN THE BALANCE SHEET SUGGESTED.</h2>
+      <p class="breather-sub">$36 BILLION IN CAPITAL &bull; OVER $100 BILLION IN SYNTHETIC BETS</p>
+    </div>
+
+    <!-- ========================================================================
+         06 — THE LEVERAGE SIMULATOR
+         ======================================================================== -->
+    <section id="the-leverage" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 06 &bull; RISK SIMULATION</span>
+          <h2 class="section-heading">Leverage: The Asymmetry of Risk</h2>
+          <p class="section-lead-statement">
+            Simulate how a small margin cushion combined with extreme multiplier leverage creates non-linear vulnerability, where a modest price retracement completely destroys fund equity and forces lender liquidation.
+          </p>
+        </div>
+
+        <div class="leverage-sim-container">
+          
+          <div class="leverage-phase-nav" role="tablist" aria-label="Leverage Progression Phases">
+            <button class="phase-nav-btn active" data-phase="capital">1. CAPITAL ($36B)</button>
+            <button class="phase-nav-btn" data-phase="exposure">2. EXPOSURE ($100B+)</button>
+            <button class="phase-nav-btn" data-phase="leverage">3. LEVERAGE (5X–8X)</button>
+            <button class="phase-nav-btn" data-phase="margin">4. MARGIN REQUIREMENTS</button>
+            <button class="phase-nav-btn" data-phase="liquidation">5. LIQUIDATION CASCADE</button>
+          </div>
+
+          <div class="leverage-grid">
+            
+            <div class="sim-controls-panel">
+              <div class="sim-slider-group">
+                <div class="slider-label-row">
+                  <span class="slider-title">Fund Capital Base (Equity)</span>
+                  <span id="readout-capital" class="slider-val-readout tnum">$10.0B</span>
+                </div>
+                <input type="range" id="sim-capital" class="sim-range" min="2" max="36" step="1" value="10" />
+                <span style="font-size: 0.7rem; color: var(--text-muted); font-family: var(--font-mono);">Range: $2B to $36B peak documented assets</span>
+              </div>
+
+              <div class="sim-slider-group">
+                <div class="slider-label-row">
+                  <span class="slider-title">Derivative Leverage Ratio</span>
+                  <span id="readout-leverage" class="slider-val-readout tnum">5.0x</span>
+                </div>
+                <input type="range" id="sim-leverage" class="sim-range" min="1" max="10" step="0.5" value="5" />
+                <span style="font-size: 0.7rem; color: var(--text-muted); font-family: var(--font-mono);">Multiplied across multiple prime broker swap lines</span>
+              </div>
+
+              <div class="sim-slider-group">
+                <div class="slider-label-row">
+                  <span class="slider-title">Underlying Stock Price Movement</span>
+                  <span id="readout-drop" class="slider-val-readout tnum">-20%</span>
+                </div>
+                <input type="range" id="sim-drop" class="sim-range" min="-50" max="20" step="1" value="-20" />
+                <span style="font-size: 0.7rem; color: var(--text-muted); font-family: var(--font-mono);">ViacomCBS dropped -27% on March 26</span>
+              </div>
+            </div>
+
+            <div class="sim-display-panel">
+              <div class="sim-metrics-grid">
+                <div class="sim-metric-card">
+                  <span class="sim-metric-title">Gross Market Exposure</span>
+                  <span id="val-exposure" class="sim-metric-value tnum">$50.0B</span>
+                </div>
+                <div class="sim-metric-card">
+                  <span class="sim-metric-title">Borrowed / Bank Capital</span>
+                  <span id="val-borrowed" class="sim-metric-value tnum">$40.0B</span>
+                </div>
+                <div class="sim-metric-card">
+                  <span class="sim-metric-title">Portfolio Mark-to-Market Loss</span>
+                  <span id="val-loss" class="sim-metric-value danger tnum">-$10.0B</span>
+                </div>
+                <div class="sim-metric-card">
+                  <span class="sim-metric-title">Remaining Equity Cushion</span>
+                  <span id="val-remaining-equity" class="sim-metric-value tnum">$0.0B</span>
+                </div>
+              </div>
+
+              <div class="exposure-stack-visual">
+                <span class="stack-title">Capital vs Bank Debt Stack</span>
+                <div class="stack-bar-wrap">
+                  <div id="stack-bar-capital" class="stack-bar-capital">Equity: 20%</div>
+                  <div class="stack-bar-borrowed">Bank Financing: 80%</div>
+                </div>
+              </div>
+
+              <div id="margin-status-indicator" class="margin-status-banner danger">
+                <span><strong>MARGIN CALL DEFAULT:</strong> 100% of equity wiped out. Lender unsecured shortfall triggered.</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Financial Principles:</span>
+            <span class="source-title">Total Return Swap Margin Requirements & Synthetic Gross Exposure Dynamics</span>
+          </div>
+          <a href="https://www.wsj.com/articles/inside-archegoss-epic-meltdown-11617323530" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Read WSJ Epic Meltdown Analysis</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Editorial Breather: 07 THE BANKS -->
+    <div class="editorial-breather">
+      <span class="breather-num">07 / THE BANKS</span>
+      <h2 class="breather-title">THE RECKONING OF GLOBAL LENDERS.</h2>
+      <p class="breather-sub">DISCORDANT MARGIN PROTOCOLS &bull; PRISONER'S DILEMMA &bull; HISTORIC LOSSES</p>
+    </div>
+
+    <!-- ========================================================================
+         07 & 10 — THE BANKS & QUANTITATIVE BANK LOSSES
+         ======================================================================== -->
+    <section id="the-banks" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 07 &bull; LENDER RECKONING</span>
+          <h2 class="section-heading">Prime Broker Losses & Damage Breakdown</h2>
+          <p class="section-lead-statement">
+            The official loss tallies by financial institution as documented by regulatory filings, press statements, and the authority record. Over $10 billion in direct losses resulted from prime brokers unwinding Archegos's positions.
+          </p>
+        </div>
+
+        <div class="dominant-financial-showcase">
+          <div class="editorial-data-stat-block">
+            <span class="stat-huge tnum">$5.5B</span>
+            <span class="stat-entity">CREDIT SUISSE</span>
+            <span class="stat-detail">Reported Archegos-related loss &bull; more than half of bank's capital</span>
+          </div>
+          <div class="editorial-data-stat-block">
+            <span class="stat-huge tnum">$2.85B</span>
+            <span class="stat-entity">NOMURA HOLDINGS</span>
+            <span class="stat-detail">Largest loss in corporate history &bull; revised upward from $2.0B</span>
+          </div>
+          <div class="editorial-data-stat-block">
+            <span class="stat-huge tnum">$911M</span>
+            <span class="stat-entity">MORGAN STANLEY</span>
+            <span class="stat-detail">$644M loss on liquidation + $267M attempting to derisk</span>
+          </div>
+          <div class="editorial-data-stat-block">
+            <span class="stat-huge tnum">$774M</span>
+            <span class="stat-entity">UBS GROUP AG</span>
+            <span class="stat-detail">Recorded in Q1 2021 earnings statement</span>
+          </div>
+          <div class="editorial-data-stat-block">
+            <span class="stat-huge tnum">$300M</span>
+            <span class="stat-entity">MITSUBISHI UFJ</span>
+            <span class="stat-detail">EMEA securities division loss tied to Archegos default</span>
+          </div>
+        </div>
+
+        <div class="losses-table-container">
+          <table class="institutional-table" aria-label="Losses by Financial Institution">
+            <thead>
+              <tr>
+                <th scope="col">Company / Institution</th>
+                <th scope="col">Loss (US$ Million)</th>
+                <th scope="col">Notional Exposure</th>
+                <th scope="col">Exit Timing</th>
+                <th scope="col">Visual Proportion</th>
+                <th scope="col">Verified Source</th>
+              </tr>
+            </thead>
+            <tbody id="bank-losses-tbody">
+              <!-- Dynamically populated from bankLossData -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="exit-strategy-comparison">
+          
+          <div class="strategy-panel fast">
+            <div class="strategy-tag fast">FAST EXIT &bull; MITIGATION</div>
+            <h3 class="strategy-title">Goldman Sachs, Morgan Stanley & Deutsche Bank</h3>
+            <p class="strategy-body">
+              Recognizing that Hwang could not meet margin calls, Goldman Sachs and Morgan Stanley commenced aggressive block sales early on Friday, March 26. Deutsche Bank acted swiftly, dumping approximately $4 billion in positions to avoid any material loss. Morgan Stanley absorbed a $911 million loss ($644M on sales and $267M derisking).
+            </p>
+            <div class="bank-tag-wrap">
+              <span class="impact-chip">Goldman Sachs ($0)</span>
+              <span class="impact-chip">Deutsche Bank ($0)</span>
+              <span class="impact-chip">Morgan Stanley (-$911M)</span>
+            </div>
+          </div>
+
+          <div class="strategy-panel delayed">
+            <div class="strategy-tag delayed">DELAYED EXIT &bull; CATASTROPHIC HIT</div>
+            <h3 class="strategy-title">Credit Suisse & Nomura Holdings</h3>
+            <p class="strategy-body">
+              Credit Suisse and Nomura hesitated through the weekend of March 27–28, hoping to negotiate an orderly, coordinated liquidation among lenders. When talks collapsed and competitors sold off underlying stocks, Credit Suisse and Nomura were forced to liquidate into a cratering market on Monday and Tuesday, incurring historic losses of $5.5B and $2.85B.
+            </p>
+            <div class="bank-tag-wrap">
+              <span class="impact-chip alert">Credit Suisse (-$5,500M)</span>
+              <span class="impact-chip alert">Nomura (-$2,850M)</span>
+              <span class="impact-chip alert">Executive Departures</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Source Attribution:</span>
+            <span class="source-title">Credit Suisse Ad-Hoc Report (April 2021), Nomura Press Release (April 27, 2021), Morgan Stanley Q1 2021 Report</span>
+          </div>
+          <a href="https://www.reuters.com/business/finance/ubs-q1-profit-up-14-switzerlands-no-1-bank-unveils-archegos-charge-2021-04-27/" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Review Reuters Global Bank Tally ($10B+)</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Editorial Breather: 08 THE COLLAPSE -->
+    <div class="editorial-breather">
+      <span class="breather-num">08 / THE COLLAPSE</span>
+      <h2 class="breather-title">THE 72 HOURS THAT SHOOK WALL STREET.</h2>
+      <p class="breather-sub">MARCH 22–26, 2021 &bull; AN UNRAVELING FROM WITHIN</p>
+    </div>
+
+    <!-- ========================================================================
+         08 & 09 — MARCH 2021 COLLAPSE & LIQUIDATION CHRONICLE
+         ======================================================================== -->
+    <section id="the-collapse" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 08 &bull; MELTDOWN SEQUENCE</span>
+          <h2 class="section-heading">March 2021: The 72-Hour Collapse</h2>
+          <p class="section-lead-statement">
+            A chronological minute-by-minute investigation of how a single corporate equity offering by ViacomCBS unraveled a $100 billion synthetic portfolio.
+          </p>
+        </div>
+
+        <div class="collapse-chronicle">
+          
+          <div class="chronicle-card">
+            <div class="chronicle-date-col">
+              <div class="chronicle-date-pill">MARCH 22–24</div>
+              <div class="chronicle-time-sub">2021 &bull; NY TRADING</div>
+            </div>
+            <div class="chronicle-content-col">
+              <h3 class="chronicle-headline">The Catalyst: ViacomCBS Secondary Offering</h3>
+              <p class="chronicle-body">
+                ViacomCBS attempts to raise $3 billion in fresh equity to fund its streaming service expansion. The secondary offering dilutes market shares and causes the stock price to slide 9% on March 23 and another 23% on March 24.
+              </p>
+              <div class="chronicle-impact-list">
+                <span class="impact-chip alert">ViacomCBS Dilution</span>
+                <span class="impact-chip">Collateral Erosion</span>
+                <span class="impact-chip">Swap Values Drop</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chronicle-card">
+            <div class="chronicle-date-col">
+              <div class="chronicle-date-pill">MARCH 25</div>
+              <div class="chronicle-time-sub">THURSDAY EVENING</div>
+            </div>
+            <div class="chronicle-content-col">
+              <h3 class="chronicle-headline">The Emergency Standstill Conference Call</h3>
+              <p class="chronicle-body">
+                Archegos executives hold an emergency conference call with prime broker representatives from Credit Suisse, Morgan Stanley, Goldman Sachs, and Nomura. Hwang requests a standstill agreement to manage the positions orderly without depressing market prices. The banks fail to reach consensus.
+              </p>
+              <div class="chronicle-impact-list">
+                <span class="impact-chip">No Standstill Accord</span>
+                <span class="impact-chip alert">Prisoner's Dilemma</span>
+                <span class="impact-chip">Lender Distrust</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chronicle-card">
+            <div class="chronicle-date-col">
+              <div class="chronicle-date-pill">MARCH 26</div>
+              <div class="chronicle-time-sub">FRIDAY MORNING</div>
+            </div>
+            <div class="chronicle-content-col critical">
+              <h3 class="chronicle-headline">Margin Call Default & The $30 Billion Fire Sale</h3>
+              <p class="chronicle-body">
+                Archegos defaults on margin calls from several banks. Breaking away from any prospective pact, Goldman Sachs and Morgan Stanley begin liquidating tens of billions of dollars' worth of shares in massive block trades. ViacomCBS collapses 27% in a single day; Discovery plunges 27.4%.
+              </p>
+              <div class="chronicle-impact-list">
+                <span class="impact-chip alert">Archegos Margin Default</span>
+                <span class="impact-chip alert">VIAC -27%</span>
+                <span class="impact-chip alert">DISCA -27%</span>
+                <span class="impact-chip alert">&gt;$30B Blocks Liquidated</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="chronicle-card">
+            <div class="chronicle-date-col">
+              <div class="chronicle-date-pill">MARCH 29–30</div>
+              <div class="chronicle-time-sub">MONDAY–TUESDAY</div>
+            </div>
+            <div class="chronicle-content-col critical">
+              <h3 class="chronicle-headline">Global Contagion & Banking Equity Rout</h3>
+              <p class="chronicle-body">
+                Credit Suisse shares decline 14% and Nomura falls 16% as both issue urgent material impact warnings. On March 30, Mitsubishi UFJ (MUFG) declares a $300 million loss in its EMEA operations, and Japan's Nikkei 225 drops 0.77%, sparking a worldwide sell-off across banking equities.
+              </p>
+              <div class="chronicle-impact-list">
+                <span class="impact-chip alert">CS -14%</span>
+                <span class="impact-chip alert">Nomura -16%</span>
+                <span class="impact-chip alert">MUFG -$300M</span>
+                <span class="impact-chip alert">Nikkei 225 -0.77%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Source Attribution:</span>
+            <span class="source-title">The Wall Street Journal (March 28 & April 1, 2021), The Telegraph (March 29, 2021), Reuters (March 30, 2021)</span>
+          </div>
+          <a href="https://www.telegraph.co.uk/business/2021/03/29/markets-live-latest-coronavirus-news-pound-euro-ftse-100/" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Read Telegraph Initial Market Coverage</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         11 & 12 — THE INVESTIGATION & THE LEGAL CASE
+         Strict Categorization: Allegation, Charge, Defense, Conviction, Sentence
+         ======================================================================== -->
+    <section id="the-legal-case" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 12 &bull; JURISDICTION & PROSECUTION</span>
+          <h2 class="section-heading">The Legal Dossier: Allegations vs Findings</h2>
+          <p class="section-lead-statement">
+            Preserving strict legal distinctions between prosecutorial allegations, defense claims, regulatory enforcement actions, jury verdicts, and final judicial sentences.
+          </p>
+        </div>
+
+        <div class="legal-categories-grid">
+          
+          <div class="legal-card">
+            <span class="legal-badge-pill allegation">PROSECUTORIAL ALLEGATION</span>
+            <h3 class="legal-card-title">Stock Price Manipulation Scheme</h3>
+            <p class="legal-card-body">
+              Federal prosecutors alleged that Hwang and CFO Patrick Halligan schemed to artificially manipulate stock prices by placing coordinated pre-market and market-on-close bids, creating false trading volume to drive up swap valuations and induce banks into granting further credit.
+            </p>
+            <div class="legal-card-meta">
+              <span>Source: 59-Page Indictment</span>
+              <span>U.S. DOJ (SDNY)</span>
+            </div>
+          </div>
+
+          <div class="legal-card">
+            <span class="legal-badge-pill charge">CRIMINAL INDICTMENT &bull; APRIL 2022</span>
+            <h3 class="legal-card-title">RICO, Securities Fraud & Wire Fraud</h3>
+            <p class="legal-card-body">
+              On April 27, 2022, federal agents arrested Bill Hwang and former CFO Patrick Halligan. The indictment charged racketeering conspiracy under the RICO Act, securities fraud, and wire fraud in connection with Archegos's multibillion-dollar implosion.
+            </p>
+            <div class="legal-card-meta">
+              <span>Judge: Alvin K. Hellerstein</span>
+              <span>Case: 22-CR-240</span>
+            </div>
+          </div>
+
+          <div class="legal-card">
+            <span class="legal-badge-pill defense">DEFENSE POSITION</span>
+            <h3 class="legal-card-title">Claims of Innocence & Strategy</h3>
+            <p class="legal-card-body">
+              Attorneys for Hwang and Halligan maintained that their clients were completely innocent of all criminal charges, arguing that Hwang pursued legitimate investment beliefs in target companies and that prime broker banks were sophisticated market institutions fully aware of the derivative risks.
+            </p>
+            <div class="legal-card-meta">
+              <span>Filings: Dec 2022</span>
+              <span>Defense Counsel</span>
+            </div>
+          </div>
+
+          <div class="legal-card">
+            <span class="legal-badge-pill conviction">JURY CONVICTION &bull; JULY 2024</span>
+            <h3 class="legal-card-title">Guilty on 10 of 11 Criminal Counts</h3>
+            <p class="legal-card-body">
+              Following a multi-week trial in Manhattan federal court, a jury convicted Sung Kook Hwang on 10 of 11 criminal counts, finding him guilty of fraud, racketeering conspiracy, and market manipulation that triggered over $100 billion in shareholder market losses.
+            </p>
+            <div class="legal-card-meta">
+              <span>Verdict: July 2024</span>
+              <span>Manhattan Federal Jury</span>
+            </div>
+          </div>
+
+          <div class="legal-card">
+            <span class="legal-badge-pill sentence">FINAL SENTENCE &bull; NOV 21, 2024</span>
+            <h3 class="legal-card-title">18 Years in Federal Prison</h3>
+            <p class="legal-card-body">
+              U.S. District Judge Alvin Hellerstein sentenced Bill Hwang to 18 years in federal prison for orchestrating the massive fraud. Judge Hellerstein characterized the collapse as a catastrophic loss of institutional integrity.
+            </p>
+            <div class="legal-card-meta">
+              <span>Sentence: 18 Years Prison</span>
+              <span>Reuters (Cohen & Stempel)</span>
+            </div>
+          </div>
+
+          <div class="legal-card">
+            <span class="legal-badge-pill charge">REGULATORY PENALTY &bull; JULY 2023</span>
+            <h3 class="legal-card-title">$387M Fine Against Credit Suisse</h3>
+            <p class="legal-card-body">
+              In July 2023, Credit Suisse (having been acquired in an emergency transaction by UBS) was fined $387 million by the U.S. Federal Reserve and British Prudential Regulation Authority (PRA) for egregious risk management failures regarding Archegos.
+            </p>
+            <div class="legal-card-meta">
+              <span>Regulators: Fed & PRA</span>
+              <span>Penalty: $387 Million</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Source Attribution:</span>
+            <span class="source-title">Reuters (November 21, 2024), The New York Times (April 27, 2022 & July 24, 2023), CNBC (April 27, 2022)</span>
+          </div>
+          <a href="https://www.reuters.com/legal/archegos-bill-hwang-be-sentenced-massive-us-fraud-2024-11-20/" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Read Reuters 2024 Sentencing Report</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         13 — THE DOCUMENT ROOM / ARCHIVE DOSSIER
+         ======================================================================== -->
+    <section id="document-room" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 13 &bull; ARCHIVAL EVIDENCE</span>
+          <h2 class="section-heading">The Document Room</h2>
+          <p class="section-lead-statement">
+            Directly examine authenticated transcripts, regulatory inquiry letters, official court indictments, and corporate trading disclosures preserved from the investigation.
+          </p>
+        </div>
+
+        <div class="document-room-container">
+          
+          <aside class="doc-sidebar">
+            <div class="doc-sidebar-header">EXHIBITS ARCHIVE</div>
+            <ul id="doc-room-list" class="doc-list" role="tablist">
+              <!-- Dynamically populated from documentRoomData -->
+            </ul>
+          </aside>
+
+          <div class="doc-viewer-main">
+            <div class="doc-viewer-toolbar">
+              <div class="doc-toolbar-info">
+                <strong id="doc-active-title">Document Title</strong>
+                <div id="doc-active-meta" style="font-size: 0.7rem; color: var(--text-muted);">Institution &bull; Date</div>
+              </div>
+              <div class="doc-toolbar-actions">
+                <span id="doc-page-indicator" style="align-self: center; font-size: 0.7rem;">Page 1 of 2</span>
+                <button id="doc-prev-page" class="doc-action-btn">PREV</button>
+                <button id="doc-next-page" class="doc-action-btn">NEXT</button>
+                <button id="doc-fullscreen-btn" class="doc-action-btn" title="Inspect Fullscreen">FULLSCREEN</button>
+                <a id="doc-open-source" href="#" target="_blank" rel="noopener noreferrer" class="doc-action-btn">VERIFIED SOURCE</a>
+              </div>
+            </div>
+
+            <div class="doc-viewer-content">
+              <div class="doc-paper-sheet">
+                <div id="doc-active-stamp" class="doc-paper-stamp">OFFICIAL RECORD</div>
+                <div id="doc-paper-content">Document text loading...</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Document Provenance:</span>
+            <span class="source-title">U.S. Department of Justice, U.S. Senate Banking Committee, Credit Suisse AG, Federal Reserve</span>
+          </div>
+          <a href="https://www.justice.gov/opa/pr/four-charged-connection-multibillion-dollar-collapse-archegos-capital-management" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Inspect Official DOJ Release</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         14 — INTERACTIVE HISTORICAL TIMELINE
+         ======================================================================== -->
+    <section id="the-timeline" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 14 &bull; CHRONOLOGY</span>
+          <h2 class="section-heading">Historical Timeline: 2012–2024</h2>
+          <p class="section-lead-statement">
+            From the initial insider trading guilty plea at Tiger Asia Management to the peak $36 billion asset explosion, the March 2021 collapse, and the final 18-year federal prison sentence.
+          </p>
+        </div>
+
+        <div id="timeline-scrubber" class="timeline-scrubber-nav" role="tablist" aria-label="Timeline Year Scrubber">
+          <!-- Populated from timelineData -->
+        </div>
+
+        <div id="timeline-stream" class="timeline-cards-stream">
+          <!-- Populated from timelineData -->
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Chronology Authority:</span>
+            <span class="source-title">Compiled directly from Wikipedia source text citations [1] through [37]</span>
+          </div>
+          <a href="#source-archive" class="source-link-btn">
+            <span>Browse Complete Source Bibliography</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         15 — THE FINANCIAL NETWORK GRAPH
+         Interactive Visual Canvas, NO ARROWS
+         ======================================================================== -->
+    <section id="the-network" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 15 &bull; SYSTEMIC TOPOLOGY</span>
+          <h2 class="section-heading">The Interconnected Financial Web</h2>
+          <p class="section-lead-statement">
+            Interactive visual network illustrating how Archegos sat at the hub of parallel derivative agreements with rival prime brokers, each purchasing overlapping physical hedges in the exact same underlying companies.
+          </p>
+        </div>
+
+        <div class="network-canvas-container">
+          <canvas id="network-canvas"></canvas>
+          <div id="network-tooltip" class="network-node-tooltip"></div>
+
+          <div class="network-legend-strip">
+            <div class="legend-item">
+              <span class="legend-color-dot" style="background-color: #c5a968;"></span>
+              <span>Center: Archegos Capital</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color-dot" style="background-color: #c94a4a;"></span>
+              <span>Severe Loss Lenders (CS, Nomura)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color-dot" style="background-color: #d49c4b;"></span>
+              <span>Moderate Loss Lenders (MS, UBS)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color-dot" style="background-color: #48a97c;"></span>
+              <span>Fast-Exit Lenders (GS, DB)</span>
+            </div>
+            <div class="legend-item">
+              <span class="legend-color-dot" style="background-color: #5b8ec2;"></span>
+              <span>Underlying Concentrated Equities</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-source-box">
+          <div class="source-details">
+            <span class="source-tag">Systemic Anatomy:</span>
+            <span class="source-title">Total Return Swap Parallel Counterparty Matrix & Open Market Hedge Footprint</span>
+          </div>
+          <a href="https://www.wsj.com/articles/goldman-morgan-limit-losses-with-fast-sale-of-archegos-assets-11617062028" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            <span>Read WSJ Broker Matrix Investigation</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         16 — THE SOURCE ARCHIVE: ALL 37 CITATIONS
+         ======================================================================== -->
+    <section id="source-archive" class="dossier-section">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <span class="section-code-badge">DOSSIER CHAPTER 16 &bull; CITATION ARCHIVE</span>
+          <h2 class="section-heading">Verified Source Bibliography</h2>
+          <p class="section-lead-statement">
+            The complete 37-reference record from the authority text, documenting primary reporting from The Wall Street Journal, Bloomberg News, Reuters, Financial Times, The Telegraph, court filings, and regulatory ad-hoc disclosures.
+          </p>
+        </div>
+
+        <div class="archive-search-bar">
+          <input type="text" id="archive-search-input" class="archive-search-input" placeholder="Search citations by publisher, title, author, or year (e.g., 'Reuters', 'Credit Suisse', '2024')..." />
+        </div>
+        <div id="archive-match-count" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-accent); margin-bottom: 1.5rem;">
+          37 of 37 Sources Displayed
+        </div>
+
+        <div id="archive-grid" class="archive-grid">
+          <!-- Dynamically populated from sourceArchiveData -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       Editorial Colophon & Archive Integrity
+       ======================================================================== -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h4>ARCHÉGOS: THE INVISIBLE POSITION</h4>
+        <p>
+          An independent institutional digital research archive documenting the collapse of Archegos Capital Management, Bill Hwang, total return swaps, and lender risk management failures. Built strictly from authoritative historical sources and public legal dockets.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Key Chapters</h5>
+        <ul>
+          <li><a href="#hero-section">The Overview</a></li>
+          <li><a href="#the-man">Bill Hwang Profile</a></li>
+          <li><a href="#the-structure">Total Return Swaps</a></li>
+          <li><a href="#the-leverage">Leverage Simulator</a></li>
+          <li><a href="#the-banks">Prime Broker Losses</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Evidence & Legal</h5>
+        <ul>
+          <li><a href="#the-collapse">Meltdown Chronicle</a></li>
+          <li><a href="#the-legal-case">Court Verdicts & Sentence</a></li>
+          <li><a href="#document-room">Document Archive</a></li>
+          <li><a href="#the-network">Financial Web</a></li>
+          <li><a href="#source-archive">37 Source References</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <span>FACTUAL CONTENT AUTHORITY: WIKIPEDIA (ARCHEGOS CAPITAL MANAGEMENT)</span>
+      <span>STRICT COMPLIANCE: NO FABRICATED DATA &bull; VERIFIED CITATIONS</span>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       FULL-SCREEN ARCHIVAL DOCUMENT INSPECTION MODAL (Section 16)
+       ======================================================================== -->
+  <div id="doc-modal-overlay" class="doc-modal-overlay" role="dialog" aria-modal="true" aria-label="Archival Document Inspection Modal">
+    <div class="doc-modal-header">
+      <div id="modal-doc-title" class="doc-modal-title">Document Title</div>
+      <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+        <span id="modal-page-count" style="color: var(--text-muted); font-size: 0.72rem;">Page 1 of 2</span>
+        <button id="modal-zoom-out" class="doc-action-btn" title="Zoom Out">−</button>
+        <button id="modal-zoom-in" class="doc-action-btn" title="Zoom In">+</button>
+        <button id="modal-prev-page" class="doc-action-btn">PREV</button>
+        <button id="modal-next-page" class="doc-action-btn">NEXT</button>
+        <a id="modal-external-link" href="#" target="_blank" rel="noopener noreferrer" class="doc-action-btn">SOURCE RECORD</a>
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close Document Viewer">ESC / CLOSE</button>
+      </div>
+    </div>
+    <div class="doc-modal-body">
+      <div id="modal-sheet" class="doc-modal-sheet">
+        <div id="modal-doc-stamp" class="doc-paper-stamp">OFFICIAL RECORD</div>
+        <div id="modal-sheet-text"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- External CDN Libraries (Allowed: GSAP, ScrollTrigger, Lenis) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
